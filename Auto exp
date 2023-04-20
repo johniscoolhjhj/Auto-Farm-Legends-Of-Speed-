@@ -1,0 +1,10 @@
+while wait() do
+
+local args = {
+    [1] = "collectOrb",
+    [2] = "Yellow Orb",
+    [3] = "Magma City"
+}
+
+game:GetService("ReplicatedStorage").rEvents.orbEvent:FireServer(unpack(args))
+end
